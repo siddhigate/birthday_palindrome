@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+:root{
+    --primary-color:#8B5CF6;
+    --dark-gray:#6B7280;
+    --light-gray:#F9FAFB;
+    --offwhite: #d7f3fa;
+    --light-blue:#EFF6FF;
+    --baby-pink: #FFB6C1;
+    --purple: #A5B4FC;
+    --pink:#FB9E9F;
+    /* #EE6C8A */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--light-gray);
+    /* background: #EFF6FF; */
+}
+
+/** navigation **/
+
+.navigation {
+    
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin: auto;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    background: var(--primary-color);
+    background: #A78BFA;
+    color: white;
+    padding:0.5rem 2rem 0.5rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+
+/** containers **/
+.container {
+    
+    padding: 0rem 1rem;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    
+    min-height:70vh;
+}
+
+.container-center{
+    max-width:600px;
+    margin:auto;
+    margin-top:1rem;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 1rem    ;
+}
+label{
+    width:80%;
+    font-size: 1.1rem;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+}
+
+.column2{
+    margin: auto;
+    width:70%;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+input{
+    padding: 1rem;
+    color: #4b5563;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    border-radius: 0.5rem;
+    width:80%;
+    margin-left:1.5rem;
+    margin-top: 0.5rem;
+}
+
+button{
+    background: var(--primary-color) ;
+    background: #A78BFA;
+    border:none;
+    padding:1rem 4rem 1rem 4rem;
+    box-shadow: 0 1px 18px #EFF6FF;
+    border-radius: 0.25rem;
+    color: white;
+    font-size:1rem;
+    cursor: pointer;
+    margin-top: 1rem;;
+}
+
+
+
+.row2{
+    display: none;
+}
+
+.error{
+    display: none;
+}
+
+#date_label{
+    width:60%;
+}
+
+.output_msg{
+    width:60%;
+    margin: auto;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.output-msg{
+    width: 100%;
+    margin: auto;
+}
+
+.output-img{
+    width:80%;
+    object-fit: cover;
+}
+
+.error-msg{
+    color:red;
+}
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0.25rem;
+}
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+/* footer */
+
+.footer{
+    background-color:var(--light-gray);
+    background-color: white;
+    padding:2rem 0rem;
+    text-align: center;
+    color:black;
+    border-top-right-radius:1rem;
+    box-shadow: 0 1px 25px #E5E7EB;
+    margin-top: 3rem;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+    padding-inline-start:0px;
+}
+.footer .link{
+    color:black;
+}
+
+.footer ul{
+    padding-left:0px;
+}
+
+.footer-icon{
+    width:2rem;
+}
+
+
+.mt-3{
+    margin-top: 2rem;
+}
+@media (max-width: 500px) {
+    body{
+        background-color: white;
+    }
+    .row1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-center{
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .column1{
+        width: 70%;
+        margin:auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .row{
+        margin:2rem;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    .privacy-note{
+        width:85%;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    #date_label{
+        width:80%;
+    }
+
+    .output_msg{
+        flex-direction: column;
+    }
+
+    .output-img{
+        order:1;
+    }
+
+    .output-msg{
+        order: 0;
+    }
+
+    .form-row{
+        margin: auto;
+        margin-top: 2rem;
+
+    }
+
+    button{
+        margin: auto;
+    }
+}
