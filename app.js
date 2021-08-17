@@ -50,7 +50,7 @@ function checkPalindrome(){
         const [ctr2, prev_date, prev_date_format] = getPreviousPalindromeDate(date);
   
         if (ctr1 > ctr2) {
-          setOutput("prevPalindrome",  prev_dateformat, prev_date, ctr2)
+          setOutput("prevPalindrome",  prev_date_format, prev_date, ctr2)
         //   output_div.innerText = `Oops! The nearest palindrome date is ${prev_date.day}-${prev_date.month}-${prev_date.year} in ${prev_date_format} format, you missed by ${ctr2} days.`;
         } else {
             setOutput("nextPalindrome", next_date_format, next_date, ctr1)
