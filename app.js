@@ -278,17 +278,18 @@ function setLoading(){
 
 function setOutput(status,  format,  pal_date, count){
 
+    let result_date = getDateAsString(pal_date);
     switch (status) {
         case "isPalindrome":
             output_div.innerHTML = `<div><img src='./assets/happy.svg'></div><div style="margin:auto; font-size:1.4rem">Yayy! Your birthday is a palindrome:) <span style="font-size:0.5rem">in ${format} format</span></div>`
             break;
 
         case "nextPalindrome":
-            output_div.innerHTML = `<div><img src='./assets/sad.svg'></div><div style="margin:auto;">Oops! The nearest palindrome date is ${pal_date.day}-${pal_date.month}-${pal_date.year} <span> in ${format} format</span>, you missed by ${count} days. </div>`;
+            output_div.innerHTML = `<div><img src='./assets/sad.svg'></div><div style="margin:auto;">Oops! The nearest palindrome date is ${result_date.day}-${result_date.month}-${result_date.year} <span> in ${format} format</span>, you missed by ${count} days. </div>`;
             break;
 
         case "prevPalindrome":
-            output_div.innerHTML = `<div><img src='./assets/sad.svg'></div><div style="margin:auto;">Oops! The nearest palindrome date is ${pal_date.day}-${pal_date.month}-${pal_date.year} <span> in ${format} format</span>, you missed by ${count} days. </div>`;
+            output_div.innerHTML = `<div><img src='./assets/sad.svg'></div><div style="margin:auto;">Oops! The nearest palindrome date is ${result_date.day}-${result_date.month}-${result_date.year} <span> in ${format} format</span>, you missed by ${count} days. </div>`;
             break;
         
         default:
