@@ -141,16 +141,28 @@ button{
     display: flex;
     margin-top: 1rem;
     justify-content: center;
+    align-items: center;
 }
 
-.output-msg{
+.output_msg{
     width: 100%;
     margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .output-img{
-    width:80%;
+    width:14rem;
+    height: 14rem;
     object-fit: cover;
+}
+
+.output-txt {
+    margin:auto; 
+    font-size: 1.2rem; 
+    padding: 1rem;
 }
 
 .error-msg{
@@ -272,5 +284,9 @@ button{
 
     button{
         margin: auto;
+    }
+
+    .output-txt {
+        font-size: 1.1rem;
     }
 }
